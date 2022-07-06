@@ -1,16 +1,16 @@
 from distutils.core import setup
 
 setup(
-  name = 'pyBox',
-  packages = ['pyBox'],
+  name = 'pyascbox',
+  packages = ['pyascbox'],
   version = '0.1',
   license='MIT',
-  description = 'Creates a Box around a python string with headline and body.',
+  description = 'Creates an ascii box around a string with head and body.',
   author = 'Lennard Spors',
   author_email = 'lennard.spors@gmail.com',
-  url = 'https://github.com/user/reponame',
-  download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',
-  keywords = ['Box', 'StringBox'],
+  url = 'https://github.com/len-nar-d/pyascbox',
+  download_url = 'https://github.com/len-nar-d/pyascbox/archive/refs/tags/v0.1.tar.gz',
+  keywords = ['box', 'asciibox'],
   install_requires=[],
   classifiers=[
     'Development Status :: 3 - Alpha',

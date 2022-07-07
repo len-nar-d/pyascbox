@@ -121,6 +121,8 @@ class Box:
             List of strings representing the lines of text in the ascii box.
         
         """
+        self.body = self.body.replace("\n", "")
+
         if not any(x in self.body for x in whitespace):
             content = wrap(self.body, self.width)
             for i, k in enumerate(content):
@@ -164,6 +166,8 @@ class Box:
                    f"{chars.get('rightUpperCorner')}\n")
 
         if self.headline is not None:
+            self.headline = self.headline.replace("\n", "")
+
             content += (f"{chars.get('verticalConnector')} "
                         f"{self.__centralize__(self.headline, self.width)}"
                         f" {chars.get('verticalConnector')}\n")
